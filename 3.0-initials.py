@@ -6,3 +6,5 @@ userMiddleInitial = userMiddleName[0].upper()
 userLastInitial = userLastName[0].upper()
 userInitials = userFirstInitial + userMiddleInitial + userLastInitial
 print("\nYour initials are:", userInitials)
+
+# Just looking to change something.
