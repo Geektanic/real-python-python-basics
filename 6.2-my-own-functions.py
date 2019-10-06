@@ -1,12 +1,12 @@
-"""def multiply(x, y):
+def multiply(x, y):
     product = x * y
     return product
 
 num = multiply(2, 4)
-print(num)"""
+print(num)
 
 # Review exercise 1
-'''
+
 def cube(x):
     """Gets a number and cubes it"""
     cubed_number = x ** 3
@@ -14,7 +14,7 @@ def cube(x):
 
 cubed = cube(float(input("Give us a number: ")))
 print(f"That number cubed is {cubed:.2f}.")
-'''
+
 
 # Review exercise 2
 
