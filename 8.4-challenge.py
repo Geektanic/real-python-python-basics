@@ -8,7 +8,7 @@ for n in range(1, number + 1):
     if test_remainder == 0:
         print(f"{n} is a factor of {number}")
 
-# Including book solution because for future reference.
+# Including book solution for future reference.
 
 num = int(input("Enter a positive integer: "))
 for divisor in range(1, num + 1):
