@@ -25,7 +25,11 @@ y = "x" in my_name
 print(y)
 
 # Review exercise 6
-# I know there's a better way, but I'm not seeing it yet
+# Asking for a slice, but I'm not seeing it.  I know I'm just overthinking it.
 
 some_of_my_name = (my_name[1], my_name[2], my_name[3], my_name[4], my_name[5], my_name[6])
 print(some_of_my_name)
+
+# After checking the book's solution I feel silly
+
+print(my_name[1:])
