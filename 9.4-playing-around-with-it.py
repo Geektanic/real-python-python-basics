@@ -98,9 +98,6 @@ while tuition_counter < uni_amount:
     uni_tuition_list.append(new_tuition)
     tuition_counter = tuition_counter + 1
 
-print(uni_list)
-print(uni_enroll_list)
-print(uni_tuition_list)
 
 custom_uni_list = []
 for unis in range(uni_amount):
