@@ -115,7 +115,8 @@ median_tuition = median(totals[1])
 counter = 0
 
 for items in custom_uni_list:
-    print(f"The university, {custom_uni_list[counter][0]}, has {custom_uni_list[counter][1]:,} students, with an average tuition of ${custom_uni_list[counter][2]:,.2f}.")
+    print(f"The university, {custom_uni_list[counter][0]}, has {custom_uni_list[counter][1]:,} students, \
+with an average tuition of ${custom_uni_list[counter][2]:,.2f}.")
     counter = counter + 1
 
 print("***************************************")
