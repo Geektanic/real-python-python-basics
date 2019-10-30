@@ -17,7 +17,7 @@ def median(a_list):
     a_list.sort()
     length = len(a_list)
     if not length % 2:
-        return a_list[(length -1 ) / 2]
+        return a_list[int((length -1 ) / 2)]
     return a_list[int(length / 2)]
 
 universities = [
@@ -72,24 +72,60 @@ while True:
 uni_list = []
 uni_counter = 0
 while uni_counter < uni_amount:
-    new_uni = input("Please enter a university to add to the list: ")
+    new_uni = str(input("Please enter a university to add to the list: "))
     uni_list.append(new_uni)
     uni_counter = uni_counter + 1
 
 uni_enroll_list = []
 enroll_counter = 0
 while enroll_counter < uni_amount:
-    new_enroll = input(f"Please enter {uni_list[enroll_counter]}\'s total enrollment: ")
+    try:
+        new_enroll = int(input(f"Please enter {uni_list[enroll_counter]}\'s total enrollment: "))
+    except ValueError:
+        print("Please enter a whole number using decimal notation.")
+        continue
     uni_enroll_list.append(new_enroll)
     enroll_counter = enroll_counter + 1
 
 uni_tuition_list = []
 tuition_counter = 0
 while tuition_counter < uni_amount:
-    new_tuition = input(f"Please enter {uni_list[tuition_counter]}\'s average tuition: ")
+    try:
+        new_tuition = float(input(f"Please enter {uni_list[tuition_counter]}\'s average tuition: "))
+    except ValueError:
+        print("Please enter a number using decimal notation.")
+        continue
     uni_tuition_list.append(new_tuition)
     tuition_counter = tuition_counter + 1
 
 print(uni_list)
 print(uni_enroll_list)
 print(uni_tuition_list)
+
+custom_uni_list = []
+for unis in range(uni_amount):
+    add_uni_values = [uni_list[unis], uni_enroll_list[unis], uni_tuition_list[unis]]
+    custom_uni_list.append(add_uni_values)
+
+totals = enrollment_stats(custom_uni_list)
+total_students = sum(totals[0])
+total_tuition = sum(totals[1])
+mean_students = mean(totals[0])
+median_students = median(totals[0])
+mean_tuition = mean(totals[1])
+median_tuition = median(totals[1])
+
+counter = 0
+
+for items in custom_uni_list:
+    print(f"The university, {custom_uni_list[counter][0]}, has {custom_uni_list[counter][1]:,} students, with an average tuition of ${custom_uni_list[counter][2]:,.2f}.")
+    counter = counter + 1
+
+print("***************************************")
+print(f"Total students:    {total_students:,}")
+print(f"Total tuition:     ${total_tuition:,.2f}")
+print(f"Student mean:      {mean_students:,.0f}")
+print(f"Student median:    {median_students:,}")
+print(f"Tuition mean:      ${mean_tuition:,.2f}")
+print(f"Tutition median:   ${median_tuition:,}")
+print("***************************************")
