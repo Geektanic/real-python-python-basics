@@ -2,14 +2,13 @@ import random
 
 # We're writing a script to write a poem from a random selection of words.
 
+noun_pool = ["fossil", "horse", "aardvark", "judge", "chef", "mango", "cowboy", "gorilla", "helicopter", "robot", "storm trooper", "jedi"]
+verb_pool = ["kicks", "jingles", "bounces", "slurps", "meows", "explodes", "curdles", "skateboards", "games", "guesses", "prays", "picks"]
+adjective_pool = ["furry", "balding", "incredulous", "fragrant", "exuberant", "glistening", "purple", "high", "good", "new", "first", "last"]
+preposition_pool = ["against", "after", "into", "beneath", "upon", "for", "in", "like", "over", "within", "of", "with", "during"]
+adverb_pool = ["curiously", "extravagantly", "tantalizingly", "furiously", "sensuously", "quietly", "happily"]
+
 def make_poem():
-
-    noun_pool = ["fossil", "horse", "aardvark", "judge", "chef", "mango", "cowboy", "gorilla", "helicopter", "robot", "storm trooper", "jedi"]
-    verb_pool = ["kicks", "jingles", "bounces", "slurps", "meows", "explodes", "curdles", "skateboards", "games", "guesses", "prays", "picks"]
-    adjective_pool = ["furry", "balding", "incredulous", "fragrant", "exuberant", "glistening", "purple", "high", "good", "new", "first", "last"]
-    preposition_pool = ["against", "after", "into", "beneath", "upon", "for", "in", "like", "over", "within", "of", "with", "during"]
-    adverb_pool = ["curiously", "extravagantly", "tantalizingly", "furiously", "sensuously", "quietly", "happily"]
-
     nouns = []
     verbs = []
     adjectives = []
