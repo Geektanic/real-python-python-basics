@@ -48,9 +48,18 @@ print(x)
 # I honestly didn't even think to wrap it all to turn into False, and then rely on
 # not to invert that.
 
+# Coming back to this on 11/04/2019 while just doing some general clean up of everything,
+# and this makes sense now.  I see how it should evaluate to False in the (), and that would
+# invert to True with the "not" in front of it.
+
 # "B" and not "A" != "B"
 x = ("B" and not "A") != "B"
 print(x)
 # I had zero idea what was going on here, and still haven't wrapped my head around what the
 # "not "A"" is doing here.  I'll need to probably read some more on that if there's no decent
 # explanation in the book.
+
+# Coming back to this on 11/04/2019, and while I'm not 100% sure on this, I think I'm getting that
+# the first section in () essentially results in something, and that something would be "True" or "False"
+# (and I'm leaning to...true, because B is not A?), which doesn't truthfully evalutate as a string "B"
+# But since whatever it is does not equal string "B," then it's true!
