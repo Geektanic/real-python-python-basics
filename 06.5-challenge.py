@@ -14,4 +14,5 @@ def invest(amount, rate, years):
 amount = float((input("How much you depositing? ")))
 rate = float((input("What rate you get? ")))
 years = int((input("How many years you not touching your money? ")))
+
 invest(amount, rate, years)
