@@ -1,0 +1,27 @@
+One parent class: Animal
+	Four child classes: Cow, Horse, Pig, Chicken
+
+Animal attributes:
+	Name
+	Sex: male/female
+	Age
+	# Legs: 2/4
+	Color
+	Method: says (some noise)
+
+Cow attributes:
+	Spots: yes/no
+	Dairy/Slaughter
+	Method: is ready for (milking/slaughter)
+
+Horse attributes:
+	Riding/Show
+	Method: is currently in the (field/stable/etc)
+
+Pig:
+	Bacon/Ham/Sausage
+	Method: is (eating/sleeping/mudding)
+
+Chicken:
+	Number of eggs for the day
+	Method: is currently in the (coop/feed area/etc)
