@@ -1,4 +1,3 @@
-# 12.4 - Challenge Book Solution.py
 
 # Oh man, the book solution is so good, so I wanted a local copy for future refernce.
 

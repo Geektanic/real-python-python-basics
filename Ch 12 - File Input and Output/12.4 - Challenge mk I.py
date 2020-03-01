@@ -1,4 +1,3 @@
-# 12.4 - Challenge.py
 
 import pathlib
 

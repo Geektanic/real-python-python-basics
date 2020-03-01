@@ -1,4 +1,3 @@
-# main.py
 
 import pathlib
 import shutil
